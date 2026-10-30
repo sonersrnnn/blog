@@ -1,0 +1,129 @@
+home: {other: Ana Sayfa}
+startReading: {other: Okumaya başla}
+backHome: {other: Ana sayfaya}
+pageNotFound: {other: Sayfa bulunamadı}
+backTop: {other: Başa dön}
+homeSticky: {other: Sabit}
+homeNew: {other: Yeni}
+homeRead: {other: Okunmadı}
+randomPost: {other: Rastgele yazı}
+console: {other: Konsol}
+menu: {other: Menü}
+toggleTheme: {other: Temayı değiştir}
+toggleAside: {other: Kenar çubuğunu aç/kapat}
+keyboardTitle: {other: Blog kısayolları}
+keyboardToggle: {other: Klavye kısayollarını aç/kapat}
+keyboardDisable: {other: Klavye kısayollarını devre dışı bırak}
+keyboardConsole: {other: Konsolu aç}
+keyboardMusic: {other: Müziği oynat/duraklat}
+keyboardThemeDark: {other: Karanlık mod}
+keyboardThemeLight: {other: Aydınlık mod}
+keyboardSearch: {other: Site araması}
+keyboardRandomPost: {other: Rastgele yazı}
+rightMenuLabel: {other: Bağlam menüsü}
+rightMenuBack: {other: Geri}
+rightMenuForward: {other: İleri}
+rightMenuRefresh: {other: Yenile}
+rightMenuCopy: {other: Metni kopyala}
+rightMenuPaste: {other: Yapıştır}
+rightMenuComment: {other: Alıntı}
+rightMenuNew: {other: Yeni sekme}
+rightMenuLink: {other: Bağlantıyı kopyala}
+rightMenuImage: {other: Görseli kopyala}
+rightMenuDownloadImage: {other: İndir}
+rightMenuSearch: {other: Ara}
+rightMenuDark: {other: Karanlık}
+rightMenuLight: {other: Aydınlık}
+rightMenuToTraditional: {other: Geleneksel}
+rightMenuToSimplified: {other: Basitleştirilmiş}
+rightMenuBarrageOpen: {other: Yorumları göster}
+rightMenuBarrageClose: {other: Yorumları gizle}
+rightMenuMusicStart: {other: Oynat}
+rightMenuMusicStop: {other: Duraklat}
+rightMenuMusicBack: {other: Önceki}
+rightMenuMusicForward: {other: Sonraki}
+rightMenuMusicCopy: {other: Başlığı kopyala}
+rightMenuImageError: {other: Bu görsel kopyalanamaz veya indirilemiyor.}
+rightMenuCtrlOriginal: {other: Tarayıcı bağlam menüsünü açmak için Ctrl + sağ tık yapın}
+posts: {other: Yazılar}
+allPosts: {other: Tüm yazılar}
+categories: {other: Kategoriler}
+tags: {other: Etiketler}
+toc: {other: İçindekiler}
+recentPosts: {other: Son yazılar}
+archives: {other: Arşiv}
+archiveAll: {other: Tümü}
+archiveYearFilter: {other: Yıla göre filtrele}
+archiveDateFormat: {other: "2 Ocak 2006"}
+archiveLoading: {other: Yazılar yükleniyor...}
+archiveLoadError: {other: Yazılar yüklenemedi. Lütfen daha sonra tekrar deneyin.}
+archiveEmpty: {other: Bu yıla ait yazı yok.}
+uncategorized: {other: Kategorisiz}
+relatedPosts: {other: İlgili yazılar}
+relatedPostsLead: {other: Bu yazıyı beğenenler ayrıca şunları okudu}
+browseRandomly: {other: Şansıma bırak}
+previousPost: {other: Önceki}
+nextPost: {other: Sonraki}
+previousPage: {other: Önceki sayfa}
+nextPage: {other: Sonraki sayfa}
+paginationNavigation: {other: Sayfalama}
+postNavigation: {other: Yazı gezintisi}
+author: {other: Yazar}
+license: {other: Lisans}
+copyrightSection: {other: Makale telif hakkı}
+copyrightActions: {other: Makale eylemleri}
+copyrightReprint: {other: Bu makale başka bir kaynaktan yeniden yayımlanmıştır.}
+copyrightOriginalPrefix: {other: Bu makale şu lisans altında yayımlanmıştır:}
+copyrightOriginalMiddle: {other: ve yayımlayan:}
+copyrightOriginalSuffix: {other: "."}
+copyLink: {other: Makale bağlantısını kopyala}
+shareTo: {other: Paylaş}
+comments: {other: Yorumlar}
+commentsLoading: {other: Yorumlar yükleniyor…}
+recentComments: {other: Son yorumlar}
+commentsEmpty: {other: Henüz yorum yok}
+commentsError: {other: Yorumlar yüklenemedi. Lütfen daha sonra tekrar deneyin.}
+commentImage: {other: Görsel}
+commentLink: {other: Bağlantı}
+commentCode: {other: Kod}
+commentEmoji: {other: Emoji}
+commentAnonymous: {other: Anonim}
+commentParticipants: {other: "Yorum yapanlar: ${names}"}
+commentMoreParticipants: {other: "${count} kişi daha"}
+pageViews: {other: Görüntülenme}
+search: {other: Ara}
+searchPlaceholder: {other: Yazılarda ara}
+searchEmpty: {other: "${query} için sonuç bulunamadı"}
+searchHit: {other: "${time} ms'de ${hits} sonuç bulundu"}
+searchCount: {other: "${count} sonuç"}
+searchLoading: {other: Aranıyor…}
+more: {other: Daha fazla}
+explore: {other: Konuları keşfet}
+frameworkBy: {other: "Altyapı:"}
+themeBy: {other: "Tema:"}
+themeDark: {other: Karanlık mod etkinleştirildi}
+themeLight: {other: Aydınlık mod etkinleştirildi}
+copySuccess: {other: Kopyalandı}
+copyError: {other: Kopyalama başarısız}
+codeCopy: {other: Kopyala}
+codeExpand: {other: Tümünü genişlet}
+timeDay: {other: gün önce}
+timeHour: {other: saat önce}
+timeJust: {other: az önce}
+timeMinute: {other: dakika önce}
+timeMonth: {other: ay önce}
+dayUnit: {other: " gün"}
+developerMode: {other: Geliştirici modu etkinleştirildi}
+commentHint: {other: Doğrudan yorum yaz}
+hello: {other: "Merhaba, "}
+welcomeBack: {other: "Tekrar hoş geldin, "}
+linksLoading: {other: Bağlantılar yükleniyor…}
+linksError: {other: Bağlantılar yüklenemedi.}
+retry: {other: Tekrar dene}
+randomLink: {other: Rastgele bir arkadaş bağlantısını ziyaret et}
+visit: {other: Ziyaret et}
+defaultSort: {other: Varsayılan sıralama}
+randomSort: {other: Rastgele sıralama}
+sortLinks: {other: Bağlantı sıralamasını değiştir}
+scrollLeft: {other: Sola kaydır}
+scrollRight: {other: Sağa kaydır}

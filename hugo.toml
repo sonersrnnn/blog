@@ -1,7 +1,262 @@
-baseURL = 'http://localhost:1313/'
-languageCode = 'tr'
-title = 'Site'
-theme = 'PaperMod'
+
+    #   tema ayarları
+theme = "solitude"         # tema
+baseURL = "https://sonersrnnn.github.io/blog/"  # site link
+title = "Soner" # Site başlığı
+locale = "tr"
+defaultContentLanguage = "tr"
+timeZone = "Europe/Istanbul"
+enableRobotsTXT = true # robots.txt dosyasını otomatik üretir
+enableGitInfo = false # true olursa sayfa tarihini Git commit'inden alır
+
+# --- Güzel olmayan (.html'li) adresler ---------------------------------------
+# posts bölümündeki yazılar "/p/slug.html" gibi .html ile biter.
+# Kapatmak istersen bu tabloyu sil; ama tema örnek linklerinde .html kullanıyor.
+[uglyURLs]
+  posts = true
+
+[params.solitude.theme_color]
+  light = "#60a5fa"
+  dark = "#60a5fa"
+
+
+[params.solitude.post.meta]
+  locate = false
+
+[params.solitude.post.default]
+  locate = "Türkiye"
+
+# --- Çıktı formatları --------------------------------------------------------
+# Hangi sayfa türü hangi dosyaları üretsin?
+[outputs]
+  # Ana sayfa: HTML + RSS + Search (arama indeksi search.xml) + Links (link sayfası verisi)
+  # Search ve Links temaya özel formatlardır; silersen arama ve link sayfası bozulur.
+  home = ["HTML", "RSS", "Search", "Links"]
+  section = ["HTML", "RSS"]    # bölüm sayfaları (ör. /posts/)
+  taxonomy = ["HTML", "RSS"]   # sınıflandırma listesi (ör. /tags/)
+  term = ["HTML", "RSS"]       # tek bir etiket/kategori sayfası
+
+# --- Sayfalama ---------------------------------------------------------------
+[pagination]
+  pagerSize = 10   # listelerde sayfa başına yazı sayısı
+
+# --- Kalıcı bağlantılar (permalink) ------------------------------------------
+[permalinks]
+  # posts bölümü için adres kalıbı: /p/yazi-adi
+  posts = "/p/:slug"
+
+
+
+[params.solitude.console]
+  enable = false
+
+[params.solitude.nav.right]
+  random = false
+
+
+
+
+# =============================================================================
+#  MENÜ  (üst gezinme çubuğu)
+#  Önce üst başlıklar (identifier), sonra "parent" ile onlara bağlı alt öğeler.
+#  weight: küçük olan önce görünür.
+#  pageRef: content/ altında o adreste bir sayfa olmalı, yoksa link kırılır.
+#  params.icon: Font Awesome ikon sınıfı.
+# =============================================================================
+
+# ---- Üst başlıklar (açılır menü başlıkları) ----
+[[menus.main]]
+  name = "Kütüphane"
+  identifier = "library"
+  weight = 10
+
+[[menus.main]]
+  name = "Hakkımda"
+  identifier = "personal"
+  weight = 30
+
+# ---- "library" altı ----
+[[menus.main]]
+  name = "Tüm Yazılar"
+  pageRef = "/archives"
+  parent = "library"
+  weight = 10
+  [menus.main.params]
+    icon = "fas fa-folder-closed"
+
+[[menus.main]]
+  name = "Tüm Kategoriler"
+  pageRef = "/categories"
+  parent = "library"
+  weight = 20
+  [menus.main.params]
+    icon = "fas fa-clone"
+
+[[menus.main]]
+  name = "Tüm Etiketler"
+  pageRef = "/tags"
+  parent = "library"
+  weight = 30
+  [menus.main.params]
+    icon = "fas fa-tags"
+
+# ---- "personal" altı ----
+
+[[menus.main]]
+  name = "Hakkımda" # kendi "Hakkımda" sayfan yap
+  pageRef = "/about"
+  parent = "personal"
+  weight = 20
+  [menus.main.params]
+    icon = "fas fa-user"
+
+
+
+
+
+
+# =============================================================================
+#  PARAMS  (tema ve site parametreleri)
+# =============================================================================
 [params]
-    mainSections = ['posts']
-    defaultTheme = 'auto'
+  # Site açıklaması (SEO / meta etiketleri)  -> DEĞİŞTİR
+  description = "Karmaşık teknolojileri anlaşılır kılmak, dijital dünyada hayatı kolaylaştıran pratik ipuçları paylaşmak ve yazılım yolculuğuna rehberlik etmek için buradayız!"
+
+  # Yazar bilgisi  -> DEĞİŞTİR
+  [params.author]
+    name = "Soner"
+    email = "Sonersrnnn"
+
+# -----------------------------------------------------------------------------
+#  params.solitude : Solitude temasının kendi ayarları
+# -----------------------------------------------------------------------------
+
+# Sol üstte görünen site adı
+[params.solitude.site.name]
+  class = "text"          # "text" = düz yazı olarak göster
+  custom = "Diyom"     # DEĞİŞTİR: görünecek ad
+
+# ---- Navigasyondaki "Projeler" grubunda dış bağlantılar ----
+# Grup adı (menüde görünen başlık).
+# DEĞİŞTİR: kendi projelerinle.
+[[params.solitude.nav.group."Projeler"]]
+  name = "Ana Sayfa"
+  url = "https://github.com/everfu/hugo-solitude"
+  icon = "/img/logo.png"   # static/img/logo.png dosyası olmalı
+
+[[params.solitude.nav.group."Projeler"]]
+  name = "Kategoriler"
+  url = "https://solitude.js.org/"
+  icon = "/img/logo.png"
+
+
+
+# ---- Yan çubuk (aside) ----
+# Hangi sayfada hangi kartlar görünsün. Kart adları virgülle ayrılır.
+#   noSticky = kaydırınca sabit kalmayan kartlar
+#   Sticky   = kaydırınca sabit kalan kartlar
+# Kart adları: about (tanıtım), newest_comment (son yorumlar),
+#              allInfo (site istatistikleri), newestPost (son yazılar)
+[params.solitude.aside.home]
+  noSticky = ""
+  Sticky = "tag:hugo,newestPost"                         #ana sayfada yok
+
+[params.solitude.aside.post]
+  noSticky = ""
+  Sticky = "tag:hugo,newestPost"                 #yazı sayfasında var
+
+[params.solitude.aside.page]
+  noSticky = ""
+  Sticky = "tag:hugo,newestPost"           #sayfalarda var
+
+
+
+
+# Kapak resminden renk çıkarıp sayfaya uygular
+[params.solitude.post.covercolor]
+  enable = true
+  mode = "local"   # renk tarayıcıda hesaplanır
+
+
+# Paylaşım butonları (kapalı)
+[params.solitude.post.share]
+  enable = false
+  list = []
+
+# ---- Alt bilgi (footer) ----
+[params.solitude.footer.information]
+  author = "/img/.jpg"   # alt şeritteki logo/avatar
+
+  [[params.solitude.footer.information.left]]
+    name = "deneme"
+    url = "https://github.com/everfu/hugo-solitude"   # DEĞİŞTİR
+    icon = "fab fa-github"
+
+  [[params.solitude.footer.information.right]]
+    name = "Abone Ol"           # RSS
+    url = "blog/index.xml"
+    icon = "fas fa-rss"
+
+# Üç sütunlu bağlantı alanı. Sütun başlıkları: Keşfet / Projeler / Hakkında
+[[params.solitude.footer.group."Keşfet"]]
+  name = "Yazılar"
+  url = "/blog//archives/"
+
+[[params.solitude.footer.group."Keşfet"]]
+  name = "Kategoriler"
+  url = "/blog//categories/"
+
+[[params.solitude.footer.group."Keşfet"]]
+  name = "Etiketler"
+  url = "/blog//tags/"
+
+[[params.solitude.footer.group."Projeler"]]
+  name = "Resmi Dokümantasyon"
+  url = "https://solitude.js.org/"
+
+[[params.solitude.footer.group."Projeler"]]
+  name = "GitHub"
+  url = "https://github.com/everfu/hugo-solitude"   # DEĞİŞTİR
+
+[[params.solitude.footer.group."Hakkında"]]
+  name = "Arkadaşlar"
+  url = "/blog/links/"
+
+[[params.solitude.footer.group."Hakkında"]]
+  name = "Tema Hakkında"
+  url = "/blog/about/"
+
+# Alt kısımdaki küçük bağlantılar
+[[params.solitude.footer.links]]
+  name = "Abone Ol"
+  url = "/blog/index.xml"
+
+
+
+
+# ---- Kod bloğu ayarları (Shiki ile renklendirme) ----
+[params.solitude.highlight]
+  enable = true
+  copy = true             # kopyala düğmesi
+  line_numbers = true     # satır numaraları
+  max_height = 360        # bloğun maksimum yüksekliği (px)
+
+  [params.solitude.highlight.themes]
+    light = "github-light"   # açık tema renk şeması
+    dark = "github-dark"     # koyu tema renk şeması
+
+# Resme tıklayınca büyütme (lightbox) kütüphanesi
+[params.solitude]
+  lightbox = "fancybox"
+
+# Shiki kütüphanesinin yüklendiği adres (internet bağlantısı gerekir)
+[params.solitude.cdn]
+  shiki = "https://esm.sh/shiki@4.4.3"
+
+# ---- Arama ----
+[params.solitude.search]
+  enable = true
+  type = "local"            # tarayıcıda çalışan yerel arama
+  [params.solitude.search.local]
+    preload = true          # indeksi önceden yükle
+    CDN = "/search.xml"     # indeks dosyası (outputs.home içinde "Search" olmalı)

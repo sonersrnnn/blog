@@ -1,3 +1,7 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/solitude"]
+	path = themes/solitude
+	url = https://github.com/everfu/hugo-solitude.git
+	branch = hugo

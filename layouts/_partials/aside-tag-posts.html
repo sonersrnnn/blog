@@ -1,0 +1,10 @@
+{{/* Belirli bir etikete sahip yazıları yan çubukta kart olarak gösterir.
+     Kullanım: params.solitude.aside.*.Sticky içine  tag:etiketadi  yaz.
+     Başlık için: params.solitude.aside.tag_card.title  (isteğe bağlı) */}}
+{{ $tag := .tag }}
+{{ $cfg := site.Params.solitude }}
+{{ $term := site.GetPage (printf "/tags/%s" (urlize $tag)) }}
+{{ if $term }}
+  {{ $title := $tag }}{{ with $cfg.aside.tag_card }}{{ with .title }}{{ $title = . }}{{ end }}{{ end }}
+  <div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude fas fa-tags"></i><span>{{ $title }}</span></div><div class="aside-list">{{ range first 5 $term.Pages.ByDate.Reverse }}<a class="aside-list-item" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ with .Params.cover }}<div class="thumbnail"><img src="{{ . | relURL }}" alt="" loading="lazy"></div>{{ end }}<div class="content"><span class="title">{{ .Title }}</span>{{ with .GetTerms "categories" }}<span class="categories">{{ (index . 0).LinkTitle }}</span>{{ end }}</div></a>{{ end }}</div></div>
+{{ end }}
