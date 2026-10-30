@@ -1,0 +1,7 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'tr'
+title = 'Site'
+theme = 'PaperMod'
+[params]
+    mainSections = ['posts']
+    defaultTheme = 'auto'
