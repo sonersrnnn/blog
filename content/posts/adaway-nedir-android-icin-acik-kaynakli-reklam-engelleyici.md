@@ -4,8 +4,10 @@ tags: [blog, adaway, android, reklam-engelleme, acik-kaynak, root, vpn, gizlilik
 source: Araştırmalar/dokumanlar/adway.md
 date: 2026-10-19
 status: yayinda
+categories: ["Mobil Dünya"]
 slug: adaway-nedir-android-icin-acik-kaynakli-reklam-engelleyici
 description: Root'lu ve root'suz cihazlarda sistem genelinde reklamları ve izleyicileri engelleyen ücretsiz, açık kaynaklı Android uygulaması AdAway rehberi.
+draft: false
 ---
 
 # AdAway Nedir? Android İçin Açık Kaynaklı ve Güçlü Reklam Engelleyici
