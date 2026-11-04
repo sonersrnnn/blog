@@ -1,13 +1,14 @@
 ---
 title: "AdAway Nedir? Android İçin Açık Kaynaklı ve Güçlü Reklam Engelleyici"
 tags: [blog, adaway, android, reklam-engelleme, acik-kaynak, root, vpn, gizlilik]
-cover: "posts/adway/iadaway.jpg"
+cover: "img/adaway-nedir-android-icin-acik-kaynakli-reklam-engelleyici/iadaway.jpg"
 date: 2026-10-19
 
 categories: ["📱 Mobil Dünya"]
 slug: adaway-nedir-android-icin-acik-kaynakli-reklam-engelleyici
 description: Root'lu ve root'suz cihazlarda sistem genelinde reklamları ve izleyicileri engelleyen ücretsiz, açık kaynaklı Android uygulaması AdAway rehberi.
 draft: false
+toc: false
 ---
 
 
@@ -45,6 +46,9 @@ Cihazınızda root yoksa endişelenmeyin! AdAway, cihaz içerisinde yerel bir **
 ---
 
 ## AdAway Neden Tercih Edilmeli?
+
+ ![](img/adaway-nedir-android-icin-acik-kaynakli-reklam-engelleyici/adaway.png) 
+ 
 
 1. **Tamamen Açık Kaynaklı ve Şeffaf:** Gizliliğinizi tehlikeye atacak arka kapılar barındırmaz. Kodları topluluk tarafından denetlenir.
 2. **Pil ve Veri Tasarrufu:** Yüklenmeyen reklamlar ve engellenen arka plan izleyicileri sayesinde mobil veri kullanımınız azalır ve pil ömrünüz uzar.

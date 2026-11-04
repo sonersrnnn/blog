@@ -43,7 +43,7 @@ enableGitInfo = false # true olursa sayfa tarihini Git commit'inden alır
 # --- Kalıcı bağlantılar (permalink) ------------------------------------------
 [permalinks]
   # posts bölümü için adres kalıbı: /p/yazi-adi
-  posts = "/p/:slug"
+  posts = "/:slug"
 
 
 
