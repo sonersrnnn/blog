@@ -21,6 +21,8 @@ cover: img/linux-isletim-sistemi-nedir-ve-dagitimlar/image.png
 
 # Linux İşletim Sistemi Nedir? Açık Kaynak Dünyası ve Popüler Dağıtımlar
 
+
+
 Bilgisayar denildiğinde milyonlarca kullanıcının aklına ilk olarak Windows gelir. Ancak dijital dünyada Windows'un ötesinde, dünyayı arkasından sürükleyen çok güçlü ve özgür bir başka dev daha var: **Linux**. 
 
 Sunuculardan süper bilgisayarlara, akıllı telefonlardan (Android temeli) ev kullanıcılarına kadar pek çok alanda hayatımızın merkezinde yer alan Linux nedir, açık kaynak felsefesi ne anlama gelir ve hangi dağıtımları tercih etmelisiniz? Bu yazımızda tüm merak edilenleri ele alıyoruz.
