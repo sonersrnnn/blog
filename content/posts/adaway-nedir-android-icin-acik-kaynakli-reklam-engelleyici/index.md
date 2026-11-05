@@ -1,7 +1,7 @@
 ---
 title: "AdAway Nedir? Android İçin Açık Kaynaklı ve Güçlü Reklam Engelleyici"
 tags: [blog, adaway, android, reklam-engelleme, acik-kaynak, root, vpn, gizlilik]
-cover: "iadaway.jpg"
+cover: "/blog/adaway-nedir-android-icin-acik-kaynakli-reklam-engelleyici/iadaway.jpg"
 date: 2026-10-19
 
 categories: ["📱 Mobil Dünya"]

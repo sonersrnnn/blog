@@ -1,7 +1,7 @@
 
     #   tema ayarları
 theme = "solitude"         # tema
-baseURL = "https://sonersrnnn.github.io/blog/"  # site link
+baseURL = "https://sonersrnnn.github.io/"  # site link
 title = "Soner" # Site başlığı
 locale = "tr"
 defaultContentLanguage = "tr"
@@ -13,7 +13,7 @@ enableGitInfo = false # true olursa sayfa tarihini Git commit'inden alır
 # posts bölümündeki yazılar "/p/slug.html" gibi .html ile biter.
 # Kapatmak istersen bu tabloyu sil; ama tema örnek linklerinde .html kullanıyor.
 [uglyURLs]
-  posts = true
+  posts = false
 
 [params.solitude.theme_color]
   light = "#60a5fa"
@@ -43,7 +43,7 @@ enableGitInfo = false # true olursa sayfa tarihini Git commit'inden alır
 # --- Kalıcı bağlantılar (permalink) ------------------------------------------
 [permalinks]
   # posts bölümü için adres kalıbı: /p/yazi-adi
-  posts = "/:slug"
+  posts = "/:slug/"
 
 
 
