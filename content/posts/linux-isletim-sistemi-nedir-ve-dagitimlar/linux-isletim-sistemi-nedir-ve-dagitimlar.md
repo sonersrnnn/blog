@@ -16,7 +16,7 @@ draft: false
 categories:
   - 🐧 Linux
 toc: false
-cover: img/linux-isletim-sistemi-nedir-ve-dagitimlar/image.png
+cover: linux-isletim-sistemi-nedir-ve-dagitimlar/image.png
 ---
 
 # Linux İşletim Sistemi Nedir? Açık Kaynak Dünyası ve Popüler Dağıtımlar
